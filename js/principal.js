@@ -33,7 +33,9 @@ for (var i = 0; i < pacientes.length; i++) {
   titulo.addEventListener("click", function () {
     console.log("Olá eu fui clicado numa funcao anonima.");
   });
-  var botaoAdicionar = document.querySelector("#adicionar-paciente");
+  
+}
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
   botaoAdicionar.addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -66,5 +68,3 @@ for (var i = 0; i < pacientes.length; i++) {
 
     tabela.appendChild(pacienteTr);
   });
-
-}
