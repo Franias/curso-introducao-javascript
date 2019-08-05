@@ -10,6 +10,7 @@ botaoAdicionar.addEventListener("click", function (event) {
   var tabela = document.querySelector("#tabela-pacientes");
 
   tabela.appendChild(pacienteTr);
+  form.reset();
 });
 
 function obtemPaciente(form) {
@@ -44,3 +45,9 @@ function montaTd(dado, classe) {
 
   return td;
 }
+
+// function validaPaciente(paciente){
+//   if(paciente.altura < 2.0 && paciente.altura >0){
+    
+//   }
+// }
