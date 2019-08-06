@@ -18,6 +18,7 @@ campoFiltro.addEventListener("input", function () {
       } else {
         paciente.classList.remove("invisivel")
       }
+      
     }
   }else{
     for (var index = 0; index < pacientes.length; index++) {
