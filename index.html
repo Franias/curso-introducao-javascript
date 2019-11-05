@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Aparecida Nutrição</title>
+  <title>2019006970</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -14,90 +14,61 @@
 
   <header>
     <div class="container">
-      <h1 class="titulo">Aparecida Nutrição</h1>
+      <h1 class="titulo">Franias WEB</h1>
     </div>
   </header>
   <main>
     <section class="container">
-      <h2>Meus pacientes</h2>
+      <h2>Minhas informações</h2>
       <label for="filtrar-tabela">Filtrar</label>
-      <input type="text" name="filtro" placeholder="Digite o nome do paciente" id="filtrar-tabela">
+      <input type="text" name="filtro" placeholder="Digite o nome da pessoa" id="filtrar-tabela">
       <table>
         <thead>
           <tr>
+            <th>ID</th>
             <th>Nome</th>
-            <th>Peso(kg)</th>
-            <th>Altura(m)</th>
-            <th>Gordura Corporal(%)</th>
-            <th>IMC</th>
+            <th>E-mail</th>
+            <th>Cpf</th>
+            <th>senha</th>
           </tr>
         </thead>
-        <tbody id="tabela-pacientes">
-          <tr class="paciente" id="primeiro-paciente">
-            <td class="info-nome">Paulo</td>
-            <td class="info-peso">100</td>
-            <td class="info-altura">2.00</td>
-            <td class="info-gordura">10</td>
-            <td class="info-imc">0</td>
+        <tbody id="tabela-pessoas">
+          <tr class="pessoa" id="primeiro-pessoa">
+            <td class="info-ID"></td>
+            <td class="info-nome"></td>
+            <td class="info-email"></td>
+            <td class="info-cpf"></td>
+            <td class="info-senha"></td>
           </tr>
-
-          <tr class="paciente">
-            <td class="info-nome">João</td>
-            <td class="info-peso">80</td>
-            <td class="info-altura">1.72</td>
-            <td class="info-gordura">40</td>
-            <td class="info-imc">0</td>
-          </tr>
-
-          <tr class="paciente">
-            <td class="info-nome">Erica</td>
-            <td class="info-peso">54</td>
-            <td class="info-altura">1.64</td>
-            <td class="info-gordura">14</td>
-            <td class="info-imc">0</td>
-          </tr>
-
-          <tr class="paciente">
-            <td class="info-nome">Douglas</td>
-            <td class="info-peso">85</td>
-            <td class="info-altura">1.73</td>
-            <td class="info-gordura">24</td>
-            <td class="info-imc">0</td>
-          </tr>
-          <tr class="paciente">
-            <td class="info-nome">Tatiana</td>
-            <td class="info-peso">46</td>
-            <td class="info-altura">1.55</td>
-            <td class="info-gordura">19</td>
-            <td class="info-imc">0</td>
-          </tr>
-        </tbody>
+        </tbody>                    
       </table>
-      <span id="erro-ajax" class="invisivel">Erro ao buscar pacientes</span>
-      <button id="buscar-pacientes" class="botao bto-principal">Buscar Paciente</button>
-      <h2 id="titulo-form">Adicionar novo paciente</h2>
+      <span id="erro-ajax" class="invisivel">Erro ao buscar</span>
+      <button id="buscar-pessoas" class="botao bto-principal">Buscar</button>
+      <h2 id="titulo-form">Adicionar nova pessoa</h2>
       <ul id="mensagens-erro">
-
       </ul>
       <form id="form-adiciona">
           <div class="grupo">
+              <label for="ID">ID:</label>
+              <input id="ID" name="ID" type="text" placeholder="digite o ID" class="campo">
+          </div>
+          <div class="grupo">
               <label for="nome">Nome:</label>
-              <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+              <input id="nome" name="nome" type="text" placeholder="digite o Nome" class="campo campo-medio">
           </div>
           <div class="grupo">
-              <label for="peso">Peso:</label>
-              <input id="peso" name="peso" type="text" placeholder="digite o peso do seu paciente" class="campo campo-medio">
+              <label for="email">E-mail:</label>
+              <input id="email" name="email" type="text" placeholder="digite o E-mail" class="campo campo-medio">
           </div>
           <div class="grupo">
-              <label for="altura">Altura:</label>
-              <input id="altura" name="altura" type="text" placeholder="digite a altura do seu paciente" class="campo campo-medio">
+              <label for="cpf">CPF:</label>
+              <input id="cpf" name="cpf" type="text" placeholder="digite o CPF" class="campo campo-medio">
           </div>
           <div class="grupo">
-              <label for="gordura">% de Gordura:</label>
-              <input id="gordura" name="gordura" type="text" placeholder="digite a porcentagem de gordura do seu paciente" class="campo campo-medio">
-          </div>
-  
-          <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+              <label for="senha">senha:</label>
+              <input id="senha" name="senha" type="text" placeholder="digite a senha" class="campo campo-medio">
+          </div>  
+          <button id="adicionar-pessoa" class="botao bto-principal">Adicionar</button>
       </form>
 
     </section>

@@ -1,4 +1,4 @@
-var pacientes = document.querySelectorAll(".paciente");
+var pessoas = document.querySelectorAll(".pessoa");
 
 var tabela = document.querySelector("table");
 
