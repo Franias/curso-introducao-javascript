@@ -1,6 +1,3 @@
-console.log("Fui carregado de outra pagina");
-var titulo = document.querySelector(".titulo");
-titulo.textContent = "Franias WEB";
 var pessoas = document.querySelectorAll(".pessoa")
 
 for (var i = 0; i < pessoas.length; i++) {
