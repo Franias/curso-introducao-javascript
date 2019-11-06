@@ -8,19 +8,33 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 
+  <script>
+    var xml;
+    function carrega(){
+      xml = new XMLHttpRequest();
+      xml.onreadystatechange = retorno;
+      xml.open("GET", carrega.php, true);
+      xml.send(); 
+    }
+    function retorno(){
+
+
+    }
+  
+  </script>
+
 </head>
 
-<body>
+<body onload="carrega()" >
 
   <header>
     <div class="container">
-      <h1 class="titulo">Franias WEB</h1>
     </div>
   </header>
   <main>
     <section class="container">
       <h2>Minhas informações</h2>
-      <label for="filtrar-tabela">Filtrar</label>
+      <label for="filtrar-tabela">Filtrar por nome</label>
       <input type="text" name="filtro" placeholder="Digite o nome da pessoa" id="filtrar-tabela">
       <table>
         <thead>
@@ -74,7 +88,7 @@
     </section>
 
   </main>
-  <script src="js/calcula-imc.js"></script>
+  <script src="js/validaCPF.js"></script>
   <script src="js/form.js"></script>
   <script src="js/filtra.js"></script>
   <script src="js/remover-pessoa.js"></script>

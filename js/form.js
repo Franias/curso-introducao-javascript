@@ -37,11 +37,11 @@ function exibeMensagemDeErro(erros) {
 
 function obtemPessoa(form) {
   var pessoa = {
+    id: form.id.value,
     nome: form.nome.value,
-    peso: form.peso.value,
-    altura: form.altura.value,
-    gordura: form.gordura.value,
-    imc: calculaImc(form.peso.value, form.altura.value)
+    cpf: form.cpf.value,
+    email: form.email.value,
+    senha: form.senha.value
   }
   return pessoa;
 }
@@ -50,11 +50,11 @@ function montaTr(pessoa) {
   var pessoaTr = document.createElement("tr");
   pessoaTr.classList.add("pessoa");
 
+  pessoaTr.appendChild(montaTd(pessoa.id, "info-ID"));
   pessoaTr.appendChild(montaTd(pessoa.nome, "info-nome"));
-  pessoaTr.appendChild(montaTd(pessoa.peso, "info-peso"));
-  pessoaTr.appendChild(montaTd(pessoa.altura, "info-altura"));
-  pessoaTr.appendChild(montaTd(pessoa.gordura, "info-gordura"));
-  pessoaTr.appendChild(montaTd(pessoa.imc, "info-imc"));
+  pessoaTr.appendChild(montaTd(pessoa.email, "info-email"));
+  pessoaTr.appendChild(montaTd(pessoa.cpf, "info-cpf"));
+  pessoaTr.appendChild(montaTd(pessoa.senha, "info-senha"));
 
   return pessoaTr;
 }

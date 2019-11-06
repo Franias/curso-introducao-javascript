@@ -8,7 +8,7 @@ body{
 }
 
 header{
-	background-color: #333;
+	background-color: #800000;
 	height: 3em;
 	color: #FFF;
 	margin-bottom: 1em;
@@ -92,7 +92,7 @@ label{
 
 .grupo{
 	width: 32%;
-	display: inline-block;
+	display: block;
 	padding: 10px 0px;
 }
 
@@ -100,17 +100,14 @@ button{
 	padding: .5em 2em;
 	border: 0;
 	border-bottom: 3px solid;
-	font-size: 1.2em;
+	font-size: 1em;
 	cursor: pointer;
-	margin: 0;
-	margin-top: -3px;
 	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
+	background-color:#ff8a8a;
+	border-color: #800000;
 	width: 20%;
     display: block;
-    clear: both;
-    margin: 10px 0px;
+	margin: 10px 0px;
 
 }
 

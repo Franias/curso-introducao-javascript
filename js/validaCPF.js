@@ -7,7 +7,7 @@ for (var i = 0; i < pessoas.length; i++) {
   var tdNome = pessoa.querySelector(".info-nome");
   var nome = tdNome.textContent;
   var tdCPF = pessoa.querySelector(".info-cpf");
-  var cpf = tdAltura.textContent;
+  var cpf = tdCPF.textContent;
   var tdSenha = pessoa.querySelector(".info-senha");
   var senha = tdSenha.textContent;
 

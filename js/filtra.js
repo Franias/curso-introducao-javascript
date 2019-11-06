@@ -5,7 +5,6 @@ campoFiltro.addEventListener("input", function () {
   var pessoas = document.querySelectorAll(".pessoa");
 
   if (this.value.length > 0) {
-    console.log("Tema glo aoiigeitaod");
     for (var index = 0; index < pessoas.length; index++) {
       var pessoa = pessoas[index];
       var tdNome = pessoas.querySelector(".info-nome");
@@ -26,7 +25,5 @@ campoFiltro.addEventListener("input", function () {
     pessoa.classList.remove("invisivel");
     }
   }
-
-
 
 })
