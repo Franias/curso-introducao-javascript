@@ -10,7 +10,6 @@ botaoAdicionar.addEventListener("click", function (event) {
     exibeMensagemDeErro(erros);
     return;
   }
-
   adicionaPessoa(pessoa);
 
   form.reset();
@@ -37,7 +36,6 @@ function exibeMensagemDeErro(erros) {
 
 function obtemPessoa(form) {
   var pessoa = {
-    id: form.id.value,
     nome: form.nome.value,
     cpf: form.cpf.value,
     email: form.email.value,
@@ -49,8 +47,7 @@ function obtemPessoa(form) {
 function montaTr(pessoa) {
   var pessoaTr = document.createElement("tr");
   pessoaTr.classList.add("pessoa");
-
-  pessoaTr.appendChild(montaTd(pessoa.id, "info-ID"));
+  
   pessoaTr.appendChild(montaTd(pessoa.nome, "info-nome"));
   pessoaTr.appendChild(montaTd(pessoa.email, "info-email"));
   pessoaTr.appendChild(montaTd(pessoa.cpf, "info-cpf"));
@@ -61,11 +58,29 @@ function montaTr(pessoa) {
 
 function montaTd(dado, classe) {
   var td = document.createElement("td");
-  td.textContent = dado;
+  td.textContent = dado;//json.
   td.classList.add(classe);
 
   return td;
 }
+
+// function montaTdImg(){
+//   var td = document.createElement("td");
+
+//    // adding the delete image to the column
+//   var imgDelete = document.createElement("img");
+//   imgDelete.setAttribute("src", "img/delete.png");
+//   imgDelete.setAttribute("onclick", "fnDelete(" + json.id + ");");
+//   tdDelete.appendChild(imgDelete);
+
+//  // adding the update image to the column
+//   var imgUpdate = document.createElement("img");
+//   imgUpdate.setAttribute("src", "img/update.png");
+//   imgUpdate.setAttribute("onclick", "enableUpdate(" + json.id + ");");
+//   tdUpdate.appendChild(imgUpdate);
+
+// }
+
 
 function validaPessoa(pessoa) {
 

@@ -2,8 +2,6 @@ var pessoas = document.querySelectorAll(".pessoa")
 
 for (var i = 0; i < pessoas.length; i++) {
   var pessoa = pessoas[i];
-  var tdID = pessoa.querySelector(".info-ID");
-  var id = tdID.textContent;
   var tdNome = pessoa.querySelector(".info-nome");
   var nome = tdNome.textContent;
   var tdCPF = pessoa.querySelector(".info-cpf");
